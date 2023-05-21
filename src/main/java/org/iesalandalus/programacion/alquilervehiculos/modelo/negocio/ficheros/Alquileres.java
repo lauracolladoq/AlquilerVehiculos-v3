@@ -293,13 +293,10 @@ public class Alquileres implements IAlquileres {
 			throw new NullPointerException("ERROR: No se puede borrar un alquiler nulo.");
 		}
 		Alquiler alquilerAux = buscar(alquiler);
-		if (alquilerAux != alquiler) {
+		if (alquilerAux == null) {
 			throw new OperationNotSupportedException("ERROR: No existe ningún alquiler igual.");
 		}
-		if (alquilerAux != null) {
-			coleccionAlquileres.remove((alquilerAux));
-		}
-
+		coleccionAlquileres.remove(alquilerAux);
 	}
 
 }

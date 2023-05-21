@@ -199,6 +199,9 @@ public class Clientes implements IClientes {
 				clienteBuscado.setTelefono(telefono);
 
 			}
+//			// PARA QUE SE ACTUALICE LA LISTA CUANDO MODIFICO
+//			int aux = coleccionClientes.indexOf(cliente);
+//			coleccionClientes.set(aux, clienteBuscado);
 		}
 
 	}
