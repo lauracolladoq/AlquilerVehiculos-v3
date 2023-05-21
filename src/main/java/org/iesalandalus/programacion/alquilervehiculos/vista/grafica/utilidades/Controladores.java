@@ -1,6 +1,7 @@
 package org.iesalandalus.programacion.alquilervehiculos.vista.grafica.utilidades;
 
 import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +10,6 @@ import org.iesalandalus.programacion.alquilervehiculos.vista.grafica.recursos.Lo
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
