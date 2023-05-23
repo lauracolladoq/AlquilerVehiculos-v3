@@ -12,8 +12,6 @@ public class MainApp {
 
 	public static void main(String[] args) {
 		Modelo modelo = new ModeloCascada(FactoriaFuenteDatos.FICHEROS);
-		// Modelo modelo = new ModeloCascada(FactoriaFuenteDatos.MEMORIA.crear());
-
 		Vista vista = procesarArgumentosVista(args);
 		Controlador controlador = new Controlador(modelo, vista);
 		controlador.comenzar();
@@ -28,7 +26,6 @@ public class MainApp {
 			} else if (argumento.equalsIgnoreCase("-vgrafica")) {
 				vista = FactoriaVista.GRAFICA.crear();
 			}
-
 		}
 		return vista;
 	}
