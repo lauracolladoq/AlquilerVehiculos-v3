@@ -100,11 +100,9 @@ public class VentanaPrincipal extends Controlador {
 		leerVehiculo.getEscenario().showAndWait();
 		try {
 			Vehiculo vehiculo = leerVehiculo.getVehiculo();
-			if (vehiculo != null) {
-				VistaGrafica.getInstancia().getControlador().insertar(vehiculo);
-				Dialogos.mostrarDialogoAdvertencia("Insertar vehiculo", "Vehiculo insertado correctamente",
-						getEscenario());
-			}
+			VistaGrafica.getInstancia().getControlador().insertar(vehiculo);
+			Dialogos.mostrarDialogoAdvertencia("Insertar vehiculo", "Vehiculo insertado correctamente", getEscenario());
+
 		} catch (IllegalArgumentException | NullPointerException | OperationNotSupportedException e) {
 			Dialogos.mostrarDialogoError("Insertar vehiculo", e.getMessage(), getEscenario());
 		}
